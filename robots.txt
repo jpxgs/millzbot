@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://millzbot.vercel.app/sitemap.xml
