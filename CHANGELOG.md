@@ -1,3 +1,6 @@
+# 2026-11-01
+- Added FIELDNOTES — Signal Video to Selected work. Live at https://signal-video.vercel.app.
+
 # Changelog
 
 All notable changes to Millzbot are listed here, newest first. Dates follow the git history. Entries use conventional commit wording. The 2026-10-29 lines describe what shipped together in the initial commit; they were not separate commits.
