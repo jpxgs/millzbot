@@ -1,20 +1,27 @@
-<img src=".github/preview.png" alt="Millzbot" width="100%">
-
 # Millzbot
 
-**Portfolio and study archive of Millz** — psychology, archetypes, philosophy, motivation and creativity, organized into Mind · Body · Soul, alongside the work: sites, Discord communities and bots, brand and video.
+**Portfolio and study archive.** Selected work, research, and experiments across software, design, communities, and media.
 
-**Live:** [millzbot.vercel.app/about](https://millzbot.vercel.app/about/) · **Pages mirror:** [jpxgs.github.io/millzbot](https://jpxgs.github.io/millzbot/)
+[Live portfolio](https://millzbot.vercel.app/about/) · [GitHub](https://github.com/jpxgs) · [GitHub Pages mirror](https://jpxgs.github.io/millzbot/)
 
-## Inside
-- Single-file, dependency-free site (`index.html`): hand-written HTML, CSS and JS, client-side routing
-- Editorial type system: IBM Plex Mono + Inter on warm paper `#F4F1EA`, signal red `#FC3D21`
-- SEO: per-route titles and descriptions, Open Graph cards, `sitemap.xml`, `robots.txt`
-- `404.html` mirrors `index.html` so deep links work on GitHub Pages
+## The work
+
+A collection of practical projects and ongoing studies, presented alongside notes on psychology, philosophy, creativity, and personal development.
+
+## Implementation
+
+- Single-file, dependency-free site: HTML, CSS, and JavaScript.
+- Client-side navigation with route-aware page titles and descriptions.
+- Editorial typography, warm neutral surfaces, and restrained signal-red accents.
+- Open Graph metadata, sitemap, robots directives, and a custom 404 page.
+- Static hosting; no build step or runtime framework.
 
 ## Run locally
-```sh
-python3 -m http.server 8000   # then open http://localhost:8000
+
+```bash
+python3 -m http.server 8000
 ```
 
-Built by [Millz](https://github.com/jpxgs) · [Ripple Mill Marketing](https://ripplemill.vercel.app)
+Open [localhost:8000](http://localhost:8000).
+
+Built by [Millz](https://github.com/jpxgs) · [Ripple Marketing](https://ripplemill.vercel.app)
