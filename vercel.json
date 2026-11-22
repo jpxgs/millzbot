@@ -1,0 +1,233 @@
+{
+  "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/about/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-01-marcus-aurelius-meditations-the-stoic-ideal/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-02-andrew-huberman-you-must-control-your-dopamine-the/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-03-you-can-make-the-choice-to-aim-up/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-03-help-your-body-heal-ep-2-part-two-how-to-safely-de/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-04-help-your-body-heal-ep-1-plants-meat-and-carbs-my-/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-01-manly-p-hall-are-we-ready-for-a-peaceful-world/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-02-359-meditation/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-04-success-is-not-freedom-here-s-why/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-03-on-good-and-evil-spirits-the-magus-1801/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-04-tao-te-ching-rivendale-music-edition/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-05-wim-hof-breathing-tutorial-by-wim-hof/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-05-dangerously-honest-advice-from-history-s-most-cont/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-06-the-confessions-of-robert-crumb-1987/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-05-a-conversation-between-ram-dass-terence-mckenna/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-07-2017-personality-11-existentialism-nietzsche-dosto/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-08-schopenhauer-the-world-as-will-and-idea/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-09-werner-herzog-on-philosophy-of-his-films-cancel-cu/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-10-to-those-who-are-starting-something-new/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-11-lessons-on-creativity-with-rick-rubin/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-12-dawkins-vs-peterson-memes-archetypes-alex-o-connor/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-13-interview-with-inventor-of-neural-nets-warren-mccu/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-06-instant-high-vibration-now/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-14-the-entity-behind-your-addictions-worm-archetype-e/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-15-aldous-huxley-interviewed-by-mike-wallace-1958-ful/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-16-50-cent-on-the-business-of-fear/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-07-the-spiral-of-creation-a-1986-michio-kushi-lecture/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-08-the-darkest-wisdom-all-of-dostoevsky-s-philosophy-/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-09-video-manly-p-hall-victory-of-the-soul-over-circum/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-17-every-second-you-can-change-your-life/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-18-philip-k-dick-if-you-find-this-world-bad-you-shoul/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-10-manly-p-hall-learning-to-know-the-dweller-in-the-f/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-19-the-science-of-effortlessness-how-to-activate-flow/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-11-you-are-the-observer-and-the-observed-thoth-s-full/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-12-there-is-nothing-to-fear-life-is-good/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-13-thought-forms-egregores-and-magic/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-14-oliver-anthony-s-speech-that-left-4000-people-stun/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-20-discipline-the-mind-conquer-the-soul/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-15-is-consciousness-the-final-reality-questioning-the/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/soul-16-the-bible-and-western-culture-kierkegaard-s-leap-o/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-21-identify-toxic-thoughts-before-they-destroy-you/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-22-carl-jung-s-1957-interview-extended-restored-and-c/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/mind-23-the-complete-fun-to-imagine-with-richard-feynman/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/mind/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/body/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/soul/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-06-you-forgot-who-you-are-let-me-remind-you/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-07-how-to-increase-testosterone-full-guide-to-increas/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-08-how-to-increase-igf-1-naturally-for-elite-muscle-a/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-09-stop-wasting-years-30-days-is-all-it-takes/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-10-doctor-explains-20-most-powerful-peptides-this-is-/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-11-why-you-should-eat-chocolate-every-day/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-12-graham-hancock-the-war-on-consciousness-banned-ted/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-13-41-harsh-truths-nobody-wants-to-admit-alex-hormozi/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-14-how-to-lower-cortisol-no-bs-practical-guide-foods-/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-01-super-size-me/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/posts/body-02-food-inc/",
+      "destination": "/index.html"
+    }
+  ]
+}
