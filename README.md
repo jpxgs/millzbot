@@ -24,4 +24,4 @@ python3 -m http.server 8000
 
 Open [localhost:8000](http://localhost:8000).
 
-Built by [Millz](https://github.com/jpxgs) · [Ripple Marketing](https://ripplemill.vercel.app)
+Built by [Millz](https://github.com/jpxgs) · [Ripple Marketing](https://ripplemill.com)
