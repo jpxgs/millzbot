@@ -200,8 +200,8 @@ function go(){var p=location.pathname;if(!p.endsWith('/'))p+='/';var f=0;documen
 </style>
 <script>
 /* Contact form: sends through FormSubmit, same route as ripplemill.com Get hired.
-   FormSubmit can take up to a minute to answer, so it waits up to 90s and says so,
-   then offers Gmail / Outlook / Yahoo / email app / copy with the message filled in. */
+   FormSubmit can take a minute to answer and sometimes returns a 500 without sending;
+   it retries those (up to 3 tries), waits up to 3 minutes, then offers Gmail / Outlook / Yahoo / email app / copy with the message filled in. */
 (function(){
 var TO='contactRippleMill@gmail.com',ENDPOINT='https://formsubmit.co/ajax/'+TO;
 var form=document.getElementById('contact-form');if(!form)return;form.noValidate=true;
@@ -228,11 +228,16 @@ if(!val('message')){say('Please add a short message.',true);return}
 if(val('_honey'))return;
 var m=build(),btn=form.querySelector('.mf-send'),label=btn.textContent,done=false;busy=true;btn.disabled=true;btn.textContent='Sending...';clearPanels();say('Sending...');
 var slow=setTimeout(function(){if(!done)say('Still sending. This can take up to a minute, please keep this page open.')},10000);
-var timer=setTimeout(function(){if(done)return;done=true;fin();say('No confirmation yet.',true);showAlt(m,'Not confirmed yet','It may still arrive. To be sure, send it by email:')},90000);
+var timer=setTimeout(function(){if(done)return;done=true;fin();say('No confirmation yet.',true);showAlt(m,'Not confirmed yet','It may still arrive. To be sure, send it by email:')},180000);
 function fin(){busy=false;clearTimeout(slow);btn.disabled=false;btn.textContent=label}
 function fail(){fin();say('Direct send did not go through. Use one of the options below.',true);showAlt(m,'Send it by email instead','Pick your email below.')}
 var payload={_subject:m.subject,_replyto:val('email'),_template:'table',_captcha:'false',Topic:topic(),Name:val('name'),Email:val('email'),Links:val('links'),Message:val('message'),Page:location.href};
-fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)}).then(function(r){return r.json()}).then(function(j){if(done)return;done=true;clearTimeout(timer);if(String(j&&j.success)==='true'){fin();showDone()}else fail()}).catch(function(){if(done)return;done=true;clearTimeout(timer);fail()})});
+var tries=0;
+function send(){tries++;fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)}).then(function(r){if(r.status>=500){var e=new Error('server');e.retry=true;throw e}return r.json()}).then(function(j){if(done)return;done=true;clearTimeout(timer);if(String(j&&j.success)==='true'){fin();showDone()}else fail()}).catch(function(e){if(done)return;
+/* FormSubmit answers 500 now and then without sending anything; retrying is safe */
+if(tries<3&&(e&&e.retry||e instanceof TypeError)){say('Still sending. The mail service is slow right now, retrying...');setTimeout(send,1500);return}
+done=true;clearTimeout(timer);fail()})}
+send()});
 /* "Website inquiry" / "Hire inquiry" links pick the matching topic */
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-topic]');if(!a)return;var r=form.querySelector('input[name=topic][value="'+a.getAttribute('data-topic')+'"]');if(r)r.checked=true;setTimeout(function(){form.elements.name.focus({preventScroll:true})},450)});
 })();
