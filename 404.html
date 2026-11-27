@@ -177,9 +177,12 @@ function go(){var p=location.pathname;if(!p.endsWith('/'))p+='/';var f=0;documen
 .mf{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;margin:16px 0 0;padding-top:16px;border-top:1px solid var(--line-soft);scroll-margin-top:90px}
 .mf-f{display:flex;flex-direction:column;gap:8px;min-width:0}.mf-f.full{grid-column:1/-1}
 .mf-o{text-transform:none;letter-spacing:0;opacity:.6}
-.mf input:not([type=radio]),.mf textarea{font:inherit;font-size:16px;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--line-soft);border-radius:0;padding:10px 0;outline:none;width:100%;transition:border-color .2s}
+.mf input:not([type=radio]),.mf textarea{font:inherit;font-size:16px;color:var(--ink);-webkit-text-fill-color:var(--ink);caret-color:var(--ink);-webkit-appearance:none;appearance:none;background:transparent;border:0;border-bottom:1px solid var(--line-soft);border-radius:0;padding:10px 0;outline:none;width:100%;transition:border-color .2s}
 .mf input:not([type=radio]):focus,.mf textarea:focus{border-bottom-color:var(--ink)}
-.mf textarea{resize:vertical;min-height:110px}.mf ::placeholder{color:var(--ink);opacity:.45}
+.mf textarea{resize:vertical;min-height:110px}
+.mf input::placeholder,.mf textarea::placeholder{color:var(--ink);-webkit-text-fill-color:var(--ink);opacity:.45}
+.mf input:-webkit-autofill,.mf input:-webkit-autofill:hover,.mf input:-webkit-autofill:focus,.mf textarea:-webkit-autofill{-webkit-text-fill-color:var(--ink);caret-color:var(--ink);-webkit-box-shadow:0 0 0 1000px var(--paper) inset;box-shadow:0 0 0 1000px var(--paper) inset;transition:background-color 99999s}
+.mf .mf-alt textarea{color:var(--ink);-webkit-text-fill-color:var(--ink)}
 .mf-r{display:flex;gap:8px;flex-wrap:wrap}
 .mf-r label{display:flex;align-items:center;gap:8px;border:1px solid var(--line-soft);padding:8px 12px;cursor:pointer;font-size:15px}
 .mf-r input{accent-color:var(--red);margin:0}.mf-r label:has(input:checked){border-color:var(--ink)}
@@ -196,7 +199,7 @@ function go(){var p=location.pathname;if(!p.endsWith('/'))p+='/';var f=0;documen
 .mf-alt .b{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border:1px solid var(--ink);color:var(--ink);text-decoration:none;background:transparent;cursor:pointer}
 .mf-alt .b.pri,.mf-alt .b:hover{background:var(--ink);color:var(--paper)}
 .mf .mf-alt textarea{min-height:150px;font:13px/1.5 'IBM Plex Mono',monospace;border:1px solid var(--line-soft);padding:10px;margin-top:10px}
-@media (max-width:640px){.mf{grid-template-columns:1fr}}
+@media (max-width:640px){.mf{grid-template-columns:1fr}.mf-foot{flex-direction:column;align-items:stretch}.mf-send{width:100%}}
 </style>
 <script>
 /* Contact form: sends through FormSubmit, same route as ripplemill.com Get hired.
